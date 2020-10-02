@@ -23,11 +23,11 @@ int main(int argc, char** argv)
 	imshow("Source", srcimage);
 
 	//----- Blur
-	//Mat blur_image;
+	Mat blur_image;
 	//blur(srcimage, blur_image, cv::Size(5, 5));
 	//GaussianBlur(srcimage, blur_image, cv::Size(5, 5), 1.5);
-	//medianBlur(srcimage, blur_image, 5);
-	//imshow("Blur", blur_image);
+	medianBlur(srcimage, blur_image, 5);
+	imshow("Blur", blur_image);
 
 	//----- Morphology Filtering
 	//Mat result_image;
